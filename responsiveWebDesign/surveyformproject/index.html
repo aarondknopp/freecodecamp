@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<h1 id="title">Registration Form for Sweepstakes</h1>
+<p id="description">You could enter to win an all-expenses-paid, 5-day, 4-night stay at a luxury Airbnb in Key West, Florida! (Must be a legal adult to enter this sweepstakes.) </p>
+<form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+<fieldset>
+<label for="name" id="name-label">Please Enter Your Name: <input id="name" name="name" type="text" placeholder="Name" required /></label>
+<label for="email" id="email-label">Please Enter Your Email Address: <input id="email" name="email" type="email" placeholder="Email Address" required /></label>
+<label for="number" id="number-label">Please Enter Your Age (In Years):<input id="number" name="number" type="number" min="18" max="120" placeholder="Age (In Years)" /></label>
+</fieldset>
+<fieldset>
+        <legend>Do you currently reside within the United States of America or any of its overseas territories? (required)</legend>
+        <label for="yes"><input id="yes" type="radio" value="yes" name="current-residence" class="inline" checked /> Yes</label>
+        <label for="no"><input id="no" type="radio" value="no" name="current-residence" class="inline" /> No</label>
+</fieldset>
+<fieldset>
+Do you plan on vacationing alone or with others?
+<label for=""><input class="inline" type="checkbox" value="alone" />Alone</label>
+<label for=""><input class="inline" type="checkbox" value="with-others" />With Others</label>
+<select id="dropdown">
+<option value="">How did you hear about this sweepstakes?</option>
+<option>Radio/television ad</option>
+<option>Print ad</option>
+<option>Word-of-mouth</option>
+<option>Other</option>
+</select>
+<textarea>Please leave additional comments here</textarea>
+
+<input id="submit" type="submit" />
+
+</fieldset>
+</form>
+</body>
+</html>
